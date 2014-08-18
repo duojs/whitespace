@@ -2,15 +2,13 @@
   "name": "duo-whitespace",
   "version": "0.0.1",
   "description": "compile whitespace-significant CSS to valid CSS",
-  "keywords": [],
+  "keywords": ["duo plugin"],
   "author": "Matthew Mueller <mattmuelle@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git://github.com/MatthewMueller/duo-whitespace.git"
   },
   "dependencies": {
-    "duo-gulp": "0.0.1",
-    "gulp-css-whitespace": "~0.1.2",
     "css-whitespace": "~1.1.0"
   },
   "devDependencies": {
