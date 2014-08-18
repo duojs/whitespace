@@ -5,10 +5,10 @@
 var compile = require('css-whitespace');
 
 /**
- * Expose `whitespace`
+ * Expose `plugin`
  */
 
-module.exports = whitespace;
+module.exports = plugin;
 
 /**
  * Compile whitespace-significant CSS
@@ -19,11 +19,11 @@ module.exports = whitespace;
  * @api public
  */
 
-function whitespace(opts) {
+function plugin(opts) {
   opts = opts || {};
   var type = opts.type || 'styl';
 
-  return function (file) {
+  return function whitespace(file) {
     if (file.type != type) return;
     file.src = compile(file.src);
     file.type = 'css';
